@@ -1,0 +1,167 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: #f5f6fa;
+    font-weight: bold;
+
+}
+
+.navbar{
+
+    position: sticky;
+    width: 100%;
+    background-color: orange;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    line-height: 50px;
+
+}
+
+.navbar-bannner{
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar-bannner:hover{
+
+    transform: scale(1.02);
+}
+
+
+.nav-cart{
+
+    width: 40px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+
+}
+
+.cart-items{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    text-align: center;
+    border-radius: 60%;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+
+
+
+
+
+}
+
+.slider{
+
+    min-height: calc(50vh - 50px);
+    background: url('../images/bannner.png') center/cover no-repeat;
+    position: relative;
+}
+
+.brand-banner{
+
+    background-color:#7a7a7a69;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.brand-banner h3 {
+    font-size: 40px;
+     font-family: "Sofia", sans-serif;
+    color: rgb(255, 196, 0);
+    font-weight: lighter;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    animation:1s ease-out 0s 1 slideAnimation;
+
+    
+    
+    
+}
+.brand-banner h3:hover{
+
+    transform: scale(1.10);
+}
+
+@keyframes slideAnimation {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0);}
+}
+.brand-banner p{
+
+    color:crimson;
+    font-weight: 900;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+   
+}
+.brand-banner p:hover{
+    transform: scale(1.10);
+}
+.navb{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.navb ul{
+
+    list-style-type: none;
+
+}
+.navb ul li{
+
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 70px;
+    text-align: center;
+}
+.navb ul li a{
+    color: black;
+    text-decoration: none;
+
+}
+.navb ul li a:hover{
+    color: darkgreen;
+    text-decoration: none;
+
+
+}
+
+#foodtype{
+
+    background-color: green;
+    color: white;
+   
+    text-decoration: none;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 60px;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 1px 1px  coral; 
+}
